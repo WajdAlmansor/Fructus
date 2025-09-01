@@ -1,0 +1,27 @@
+//
+//  SourceLinkView.swift
+//  Fructus
+//
+//  Created by Wajd on 01/09/2025.
+//
+
+import SwiftUI
+
+struct SourceLinkView: View {
+    
+    var body: some View {
+        GroupBox(){
+            HStack {
+                Text("Content source")
+                Spacer()
+                Link("Wikipedia", destination: URL(string: "https://wikipedia.com")!)
+                Image(systemName: "arrow.up.right.square")
+            }//end hstack
+            .font(.footnote)
+        }
+    }
+}
+
+#Preview {
+    SourceLinkView()
+}
