@@ -39,6 +39,7 @@ struct ContentView: View {
                     }
                 )
         }//end navigation
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
